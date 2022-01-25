@@ -321,9 +321,9 @@ void basicFunctions() {
             	
 	    } else {
          	sendCommand("t13.txt=\"\"");
-                sendCommand("t14.txt=\"Callsign\"");
-                sendCommand("t15.txt=\"not found in\"");
-                sendCommand("t16.txt=\"in database\"");
+                sendCommand("t14.txt=\"\"");
+                sendCommand("t15.txt=\"\"");
+                sendCommand("t16.txt=\"\"");
                 sendCommand("t17.txt=\"\"");
                 
             }
@@ -433,11 +433,11 @@ void basicFunctions() {
             sprintf(TXbuffer,"t17.txt=\"%s\"",users[user].data5);
             sendCommand(TXbuffer);
         } else {
-            sprintf(TXbuffer,"t13.txt=\"User %s\"",text);
+            sprintf(TXbuffer,"t13.txt=\"\"",text);
             sendCommand(TXbuffer);
-            sprintf(TXbuffer,"t14.txt=\"Not found in\"");
+            sprintf(TXbuffer,"t14.txt=\"\"");
             sendCommand(TXbuffer);
-            sprintf(TXbuffer,"t15.txt=\"%s\"",usersFile);
+            sprintf(TXbuffer,"t15.txt=\"\"",usersFile);
             sendCommand(TXbuffer);
         }
         sprintf(text, "MMDVM.status.val=78");
